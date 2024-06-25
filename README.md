@@ -5,12 +5,3 @@ Price optimization is the use of mathematical analysis by a company to determine
 
 Dataset
 You can download an initial dataset from [Dunnhumby](https://www.dunnhumby.com), we use dataset [Breakfast at the Frat](https://www.dunnhumby.com/sites/default/files/sourcefiles/dunnhumby_Breakfast-at-the-Frat.zip)
-
-
-
-Snippet : 
-    def check_within_20_percent(df, column_name, target_value):
-        lower_bound = target_value * 0.8
-        upper_bound = target_value * 1.2
-        
-        return (df[column_name] >= lower_bound) & (df[column_name] <= upper_bound)
