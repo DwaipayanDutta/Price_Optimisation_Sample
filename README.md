@@ -9,8 +9,8 @@ You can download an initial dataset from [Dunnhumby](https://www.dunnhumby.com),
 
 
 Snippet : 
-def check_within_20_percent(df, column_name, target_value):
-    lower_bound = target_value * 0.8
-    upper_bound = target_value * 1.2
-    
-    return (df[column_name] >= lower_bound) & (df[column_name] <= upper_bound)
+    def check_within_20_percent(df, column_name, target_value):
+        lower_bound = target_value * 0.8
+        upper_bound = target_value * 1.2
+        
+        return (df[column_name] >= lower_bound) & (df[column_name] <= upper_bound)
