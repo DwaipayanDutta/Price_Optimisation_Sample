@@ -36,12 +36,15 @@ This dataset is ideal for time series analyses, including:
 ```python
 import pandas as pd
 # Load the data
-data = pd.read_csv('breakfast_at_the_frat.csv')
+%%time
+data=pd.ExcelFile('Breakfast_at_the_Frat.xlsx')
 # Explore the first few rows
 print(data.head())
-# Analyze price sensitivity for a specific product
-product_data = data[data['PRODUCT'] == 'Product A']
-product_data.plot(x='SHELF_PRICE', y='UNITS', kind='scatter')
+
+# reading all sheet
+stores=breakfast.parse(sheet_name=1,header=1,usecols=range(9))
+products=breakfast.parse(sheet_name=2,header=1, usecols=range(6))
+transaction=breakfast.parse(sheet_name=3,header=1,usecols=range(12))
 ```
 ## 📦 Dataset
 You can download an initial dataset from [Dunnhumby](https://www.dunnhumby.com), we use dataset [Breakfast at the Frat](https://www.dunnhumby.com/source-files)
