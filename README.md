@@ -44,5 +44,5 @@ product_data = data[data['PRODUCT'] == 'Product A']
 product_data.plot(x='SHELF_PRICE', y='UNITS', kind='scatter')
 ```
 ## 📦 Dataset
-You can download an initial dataset from [Dunnhumby](https://www.dunnhumby.com), we use dataset [Breakfast at the Frat](https://www.dunnhumby.com/sites/default/files/sourcefiles/dunnhumby_Breakfast-at-the-Frat.zip)
+You can download an initial dataset from [Dunnhumby](https://www.dunnhumby.com), we use dataset [Breakfast at the Frat](https://www.dunnhumby.com/source-files)
 Feel free to reach out if you have any questions or need further assistance! 🚀
