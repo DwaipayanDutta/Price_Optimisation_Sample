@@ -42,9 +42,9 @@ data=pd.ExcelFile('Breakfast_at_the_Frat.xlsx')
 print(data.head())
 
 # reading all sheet
-stores=breakfast.parse(sheet_name=1,header=1,usecols=range(9))
-products=breakfast.parse(sheet_name=2,header=1, usecols=range(6))
-transaction=breakfast.parse(sheet_name=3,header=1,usecols=range(12))
+stores=data.parse(sheet_name=1,header=1,usecols=range(9))
+products=data.parse(sheet_name=2,header=1, usecols=range(6))
+transaction=data.parse(sheet_name=3,header=1,usecols=range(12))
 ```
 ## 📦 Dataset
 You can download an initial dataset from [Dunnhumby](https://www.dunnhumby.com), we use dataset [Breakfast at the Frat](https://www.dunnhumby.com/source-files)
